@@ -1,0 +1,139 @@
+
+from player import Player
+from field import Field
+import random
+
+class Option:
+    def __init__(self, width: int = 5, height: int = 5, num_players: int = 4, initial_pos=[(0, 0), (0, 4), (4, 4), (4, 0)], max_turn=30,
+        initial_field = None
+    ):
+        self.width = width
+        self.height = height
+        self.num_players = num_players
+        self.initial_pos = initial_pos
+        self.max_turn = max_turn
+        self.initial_field = initial_field #NoneのときFieldのコンストラクタで初期化
+        if(len(initial_pos) != num_players):
+            raise Exception("initial_posとnum_playersの数が合ってません")
+        
+
+def start(option:Option=Option()):
+    # json用の辞書を生成
+    json = {}
+    # フィールド生成
+    field = Field(option)
+    # プレイヤー生成
+    players = [Player(i, option) for i in range(option.num_players)]
+    # シミュレーション実行
+    json = run(option.max_turn, field, players, json)
+    # JSON出力
+    save_json(option, json)
+
+def get_states(players, field):
+    masked_field= field.mask_field()
+    others = [players[:player.id]+players[player.id+1:] for player in players]
+    return [{"my_pos":player.get_pos(),"others_pos": [other.get_pos() for other in others[player.id]],"field":masked_field} for player in players]
+
+def get_next_actions(players, states):
+    # playersのaction()を実行
+    return [player.action(state) for player,state in zip(players,states)]
+
+def step(next_actions,field,players):
+    # next_actionを実行しfieldとplayerのフィールドを更新
+
+    # 1.各プレイヤーの座標を更新
+    for player,action in zip(players,next_actions):
+        player.step(action)
+
+        #復帰処理
+        if(player.state == Player.REVIVED):
+            player.state = Player.SAFE
+            player.set_pos( field.random_pos())
+
+    #色を塗れないプレイヤーはリストから消していく
+    coloring_players = [player for player in players]
+
+    # 2.衝突判定
+    pos = {}
+    for player in players:
+        p_pos = player.get_pos()
+        if(p_pos in pos):
+            pos[p_pos]+=[player]
+        else:
+            pos[p_pos]=[player]
+    #衝突している場合，1人以外は色を塗らない
+    for splited_players in pos.values():
+        num = len(splited_players)
+        if(num >=2):
+            elected = random.randrange(num)
+            for player in splited_players[:elected]+splited_players[elected+1:]:
+                coloring_players.remove(player)
+    # 3.落下判定
+    for player in players:
+        if(field.is_fall(player.get_pos())):
+            player.fall()
+            if(player in coloring_players):
+                coloring_players.remove(player)
+    # 4.色塗り
+    for player in coloring_players:
+        field.color(player.get_pos(),player.id)
+
+def check_finish():
+    # 終了条件を満たしたかを返す
+    # 現状max_turnのみ
+    return False
+
+def debug(msg):
+    if __debug__:
+        print(msg)
+
+def debug_log(players,field):
+    if __debug__:
+        for player in players:
+            print("player"+str(player.id)+":"+str(player.get_pos()))
+        for line in field.field[::-1]:
+            for c in line:
+                view = "　"
+                if(c == -1):
+                    view = "□"
+                elif(c == 0):
+                    view = "①"
+                elif(c == 1):
+                    view = "②"
+                elif(c == 2):
+                    view = "③"
+                elif(c == 3):
+                    view = "④"
+                print(view,end="")
+            print()
+def run(max_turn: int, field: Field, players: list, json: dict):
+    for i in range(max_turn):
+        debug(str(i+1)+"ターン目の処理")
+        debug_log(players,field)
+        # 4人分の状態を生成
+        states = get_states(players,field)
+        '''
+        下の辞書が人数分入った辞書が作られる
+        {
+            "my_pos":(1,1),
+            "other_pos":[(2,2),(3,3),(4,4)]
+            "field":int[][]
+        }
+        '''
+        # 4人分の行動を収集
+        next_actions = get_next_actions(players,states)
+
+        # 行動を反映
+        step(next_actions,field,players)
+
+        # 終了時の処理
+        if check_finish():
+            break
+
+        # JSONへ保存
+
+def save_json(option, json):
+    pass
+
+if __debug__:
+    start()

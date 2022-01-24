@@ -30,11 +30,14 @@ class Player:
             elif(action==self.STAY or action==self.ERROR):
                 pass
         elif(self.state==self.FALL3):
-            self.state==self.FALL2
+            self.state=self.FALL2
         elif(self.state==self.FALL2):
-            self.state==self.FALL1
+            self.state=self.FALL1
         elif(self.state==self.FALL1):
-            self.state==self.SAFE
+            self.state=self.REVIVED
     
     def fall(self):
         self.state = self.FALL3
+    
+    def is_safe(self):
+        return self.state == self.SAFE

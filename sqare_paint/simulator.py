@@ -24,6 +24,11 @@ def start(option:Option=Option()):
     field = Field(option)
     # プレイヤー生成
     players = [Player(i, option) for i in range(option.num_players)]
+
+    #最初の足場に色を塗る
+    for player in players:
+        field.color(player.get_pos(),player.id)
+
     # シミュレーション実行
     json = run(option.max_turn, field, players, json)
     # JSON出力
@@ -48,7 +53,7 @@ def step(next_actions,field,players):
         #復帰処理
         if(player.state == Player.REVIVED):
             player.state = Player.SAFE
-            player.set_pos( field.random_pos())
+            player.set_pos( field.get_random_pos())
 
     #色を塗れないプレイヤーはリストから消していく
     coloring_players = [player for player in players]
@@ -70,8 +75,11 @@ def step(next_actions,field,players):
                 coloring_players.remove(player)
     # 3.落下判定
     for player in players:
-        if(field.is_fall(player.get_pos())):
+        if(player.is_safe() and field.is_fall(player.get_pos())):
             player.fall()
+            if(player in coloring_players):
+                coloring_players.remove(player)
+        if(not player.is_safe()):
             if(player in coloring_players):
                 coloring_players.remove(player)
     # 4.色塗り
@@ -90,26 +98,27 @@ def debug(msg):
 def debug_log(players,field):
     if __debug__:
         for player in players:
-            print("player"+str(player.id)+":"+str(player.get_pos()))
+            print("player"+str(player.id)+":"+str(player.get_pos())+" "+str(player.state))
         for line in field.field[::-1]:
             for c in line:
                 view = "　"
                 if(c == -1):
-                    view = "□"
+                    view = "⚪"
                 elif(c == 0):
-                    view = "①"
+                    view = "０"
                 elif(c == 1):
-                    view = "②"
+                    view = "１"
                 elif(c == 2):
-                    view = "③"
+                    view = "２"
                 elif(c == 3):
-                    view = "④"
+                    view = "３"
+                
                 print(view,end="")
             print()
 def run(max_turn: int, field: Field, players: list, json: dict):
+    debug("初期状態")
+    debug_log(players,field)
     for i in range(max_turn):
-        debug(str(i+1)+"ターン目の処理")
-        debug_log(players,field)
         # 4人分の状態を生成
         states = get_states(players,field)
         '''
@@ -131,6 +140,8 @@ def run(max_turn: int, field: Field, players: list, json: dict):
             break
 
         # JSONへ保存
+        debug(str(i+1)+"ターン目の処理後")
+        debug_log(players,field)
 
 def save_json(option, json):
     pass

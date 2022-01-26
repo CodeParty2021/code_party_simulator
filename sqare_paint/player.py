@@ -11,6 +11,14 @@ class Player:
             return self.UP
         return self.FALL
     
+    def action(self,state,user_code):
+        if(self.state == self.SAFE):
+            try:
+                return user_code(state)
+            except Exception:
+                return self.ERROR
+        return self.FALL
+
     def get_pos(self):
         return (self.pos_x,self.pos_y)
 

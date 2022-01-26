@@ -2,6 +2,7 @@
 from player import Player
 from field import Field
 import random
+import json
 
 class Option:
     def __init__(self, width: int = 5, height: int = 5, num_players: int = 4, initial_pos=[(0, 0), (0, 4), (4, 4), (4, 0)], max_turn=30,
@@ -18,10 +19,9 @@ class Option:
         
 
 def start(option:Option=Option()):
-    # json用の辞書を生成
-    json = {}
     # フィールド生成
     field = Field(option)
+
     # プレイヤー生成
     players = [Player(i, option) for i in range(option.num_players)]
 
@@ -29,10 +29,23 @@ def start(option:Option=Option()):
     for player in players:
         field.color(player.get_pos(),player.id)
 
+    # json用の辞書を生成
+    json_ = {
+        "players":[{"name":"デモ太郎","icon":"https://sample.com"} for i in range(option.num_players)],
+	    "stage":{"width":option.width,"height":option.height,"field":field.mask_field(),"players":[{"x":player.pos_x,"y":player.pos_y}for player in players]},
+	    "turn":[],
+	    "result":{},
+    }
     # シミュレーション実行
-    json = run(option.max_turn, field, players, json)
+    run(option.max_turn, field, players, json_)
+
+    #結果測定
+    print(judge(option,field.mask_field()))
+    json_["result"] = judge(option,field.mask_field())
+
+
     # JSON出力
-    save_json(option, json)
+    save_json(option, json_)
 
 def get_states(players, field):
     masked_field= field.mask_field()
@@ -119,6 +132,16 @@ def run(max_turn: int, field: Field, players: list, json: dict):
     debug("初期状態")
     debug_log(players,field)
     for i in range(max_turn):
+        # 現在のフィールドを保存
+        
+        player_states = [
+            {
+                "x":player.pos_x,
+                "y":player.pos_y,
+                "state":player.state,
+            } for player in players
+        ]
+
         # 4人分の状態を生成
         states = get_states(players,field)
         '''
@@ -132,6 +155,9 @@ def run(max_turn: int, field: Field, players: list, json: dict):
         # 4人分の行動を収集
         next_actions = get_next_actions(players,states)
 
+        for i,action in enumerate(next_actions):
+            player_states[i]["action"] = action
+
         # 行動を反映
         step(next_actions,field,players)
 
@@ -143,8 +169,34 @@ def run(max_turn: int, field: Field, players: list, json: dict):
         debug(str(i+1)+"ターン目の処理後")
         debug_log(players,field)
 
-def save_json(option, json):
-    pass
+        turn_info = {
+            "field":field.mask_field(),
+            "players":player_states
+        }
+        json["turn"].append(turn_info)
+
+def judge(option,field):
+    #fieldsの要素を数える
+    num = {}
+    def count(v):
+        v = str(v)
+        if(v in num):
+            num[v]+=1
+        else:
+            num[v]=1
+    map(lambda x:map(count,x),field)
+    player_num = []
+    for i in range(option.num_players):
+        if(str(i) in num):
+            player_num+=[num[str(i)]]
+        else:
+            player_num+=[0]
+    return {"scores":player_num}
+    
+def save_json(option, dict):
+    print(dict)
+    with open('sample.json', 'w') as f:
+        json.dump(dict, f, indent=4)
 
 if __debug__:
     start()

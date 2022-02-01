@@ -6,13 +6,11 @@ class Player:
         self.pos_x ,self.pos_y = option.initial_pos[id]
         self.state = self.SAFE
     
-    def action(self,state):
-        if(self.state == self.SAFE):
-            return self.UP
-        return self.FALL
     
-    def action(self,state,user_code):
+    def action(self,state,user_code=None):
         if(self.state == self.SAFE):
+            if not user_code:
+                return self.UP
             try:
                 return user_code(state)
             except Exception:

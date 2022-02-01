@@ -6,7 +6,7 @@ import json
 
 class Option:
     def __init__(self, width: int = 5, height: int = 5, num_players: int = 4, initial_pos=[(0, 0), (0, 4), (4, 4), (4, 0)], max_turn=30,
-        initial_field = None
+        initial_field = None,json_path=None,user_code = None
     ):
         self.width = width
         self.height = height
@@ -14,9 +14,17 @@ class Option:
         self.initial_pos = initial_pos
         self.max_turn = max_turn
         self.initial_field = initial_field #NoneのときFieldのコンストラクタで初期化
+        self.json_path = json_path
         if(len(initial_pos) != num_players):
             raise Exception("initial_posとnum_playersの数が合ってません")
         
+        def ret_ERROR(state):
+            return 5
+
+        if(user_code==None):
+            user_code = [ret_ERROR for i in range(num_players)]
+
+        self.user_code = user_code
 
 def start(option:Option=Option()):
     # フィールド生成
@@ -37,7 +45,7 @@ def start(option:Option=Option()):
 	    "result":{},
     }
     # シミュレーション実行
-    run(option.max_turn, field, players, json_)
+    run(option.max_turn, field, players,option.user_code, json_)
 
     #結果測定
     print(judge(option,field.mask_field()))
@@ -45,16 +53,18 @@ def start(option:Option=Option()):
 
 
     # JSON出力
-    save_json(option, json_)
+    if option.json_path is not None:
+        save_json(option, json_)
+    return  json_
 
 def get_states(players, field):
     masked_field= field.mask_field()
     others = [players[:player.id]+players[player.id+1:] for player in players]
     return [{"my_pos":player.get_pos(),"others_pos": [other.get_pos() for other in others[player.id]],"field":masked_field} for player in players]
 
-def get_next_actions(players, states):
+def get_next_actions(players, states,user_code):
     # playersのaction()を実行
-    return [player.action(state) for player,state in zip(players,states)]
+    return [player.action(state,code) for player,state,code in zip(players,states,user_code)]
 
 def step(next_actions,field,players):
     # next_actionを実行しfieldとplayerのフィールドを更新
@@ -63,10 +73,13 @@ def step(next_actions,field,players):
     for player,action in zip(players,next_actions):
         player.step(action)
 
+        #復帰１ターン前に座標更新
+        if(player.state == Player.FALL1):
+            player.set_pos( field.get_random_pos())
+
         #復帰処理
         if(player.state == Player.REVIVED):
             player.state = Player.SAFE
-            player.set_pos( field.get_random_pos())
 
     #色を塗れないプレイヤーはリストから消していく
     coloring_players = [player for player in players]
@@ -128,7 +141,8 @@ def debug_log(players,field):
                 
                 print(view,end="")
             print()
-def run(max_turn: int, field: Field, players: list, json: dict):
+
+def run(max_turn: int, field: Field, players: list, user_code:list,json: dict):
     debug("初期状態")
     debug_log(players,field)
     for i in range(max_turn):
@@ -141,7 +155,7 @@ def run(max_turn: int, field: Field, players: list, json: dict):
                 "state":player.state,
             } for player in players
         ]
-
+        
         # 4人分の状態を生成
         states = get_states(players,field)
         '''
@@ -153,10 +167,10 @@ def run(max_turn: int, field: Field, players: list, json: dict):
         }
         '''
         # 4人分の行動を収集
-        next_actions = get_next_actions(players,states)
+        next_actions = get_next_actions(players,states,user_code)
 
-        for i,action in enumerate(next_actions):
-            player_states[i]["action"] = action
+        for j,action in enumerate(next_actions):
+            player_states[j]["action"] = action
 
         # 行動を反映
         step(next_actions,field,players)
@@ -175,27 +189,22 @@ def run(max_turn: int, field: Field, players: list, json: dict):
         }
         json["turn"].append(turn_info)
 
+
 def judge(option,field):
     #fieldsの要素を数える
-    num = {}
-    def count(v):
-        v = str(v)
-        if(v in num):
-            num[v]+=1
-        else:
-            num[v]=1
-    map(lambda x:map(count,x),field)
-    player_num = []
+    score = {}
     for i in range(option.num_players):
-        if(str(i) in num):
-            player_num+=[num[str(i)]]
-        else:
-            player_num+=[0]
-    return {"scores":player_num}
+        score[str(i)] = 0
+    for line in field:
+        for value in line:
+            if 0 <= value < option.num_players:
+                score[str(value)] +=1
+            
+    return {"scores":score}
     
 def save_json(option, dict):
     print(dict)
-    with open('sample.json', 'w') as f:
+    with open(option.json_path, 'w') as f:
         json.dump(dict, f, indent=4)
 
 if __debug__:

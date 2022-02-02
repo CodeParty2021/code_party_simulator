@@ -12,7 +12,7 @@ class Player:
             if not user_code:
                 return self.UP
             try:
-                return user_code(state)
+                return user_code(state["field"],state["my_pos"],state["others_pos"])
             except Exception:
                 return self.ERROR
         return self.FALL

@@ -2,8 +2,7 @@ import sqare_paint
 
 UP,RIGHT,DOWN,LEFT,STAY =0,1,2,3,4
 
-#TODO: user_codeの引数を分解する
-def user_code(state):
+def user_code(field,my_pos,others_pos):
     return RIGHT
 
 op = sqare_paint.Option(
@@ -12,4 +11,4 @@ op = sqare_paint.Option(
     initial_pos=[(0,0)]
     )
 
-sqare_paint.start(op)
+dict_json = sqare_paint.start(op)

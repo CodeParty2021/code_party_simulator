@@ -1,4 +1,5 @@
 
+import enum
 from player import Player
 from field import Field
 import random
@@ -35,7 +36,12 @@ def start(option:Option=Option()):
 
     #最初の足場に色を塗る
     for player in players:
-        field.color(player.get_pos(),player.id)
+        field.color(player.get_pos(),player.id,players)
+
+    #scoreの初期値を設定
+    scores = judge(option,field.mask_field())["scores"]
+    for player,score in zip(players,scores):
+        player.set_score(score)
 
     # json用の辞書を生成
     json_ = {
@@ -110,7 +116,7 @@ def step(next_actions,field,players):
                 coloring_players.remove(player)
     # 4.色塗り
     for player in coloring_players:
-        field.color(player.get_pos(),player.id)
+        field.color(player.get_pos(),player.id,players)
 
 def check_finish():
     # 終了条件を満たしたかを返す
@@ -182,7 +188,10 @@ def run(max_turn: int, field: Field, players: list, user_code:list,json: dict):
         # JSONへ保存
         debug(str(i+1)+"ターン目の処理後")
         debug_log(players,field)
-
+        
+        ## scoreをplayer_stateに追加
+        for i,player in enumerate(players):
+            player_states[i]["score"] = player.score
         turn_info = {
             "field":field.mask_field(),
             "players":player_states
@@ -195,12 +204,16 @@ def judge(option,field):
     score = {}
     for i in range(option.num_players):
         score[str(i)] = 0
+
     for line in field:
         for value in line:
             if 0 <= value < option.num_players:
                 score[str(value)] +=1
-            
-    return {"scores":score}
+    idx_list = [(v,k) for k, v in score.items()]
+    idx_list.sort(reverse=True)
+    print("score",score)
+
+    return {"scores":score,"rank":[int(i) for s,i in idx_list]}
     
 def save_json(option, dict):
     print(dict)

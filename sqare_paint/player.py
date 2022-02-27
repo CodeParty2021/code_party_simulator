@@ -5,6 +5,7 @@ class Player:
         self.id = id
         self.pos_x ,self.pos_y = option.initial_pos[id]
         self.state = self.SAFE
+        self.score = 0
     
     
     def action(self,state,user_code=None):
@@ -47,3 +48,9 @@ class Player:
     
     def is_safe(self):
         return self.state == self.SAFE
+
+    def set_score(self,score):
+        self.score = int(score)
+    
+    def add(self,increment):
+        self.score += increment

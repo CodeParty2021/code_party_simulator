@@ -192,8 +192,14 @@ def run(max_turn: int, field: Field, players: list, user_code:list,json: dict):
         ## scoreをplayer_stateに追加
         for i,player in enumerate(players):
             player_states[i]["score"] = player.score
+        def reduceDim(list):
+            ret = []
+            for l in list:
+                ret = ret + l
+            return ret
+
         turn_info = {
-            "field":field.mask_field(),
+            "field":reduceDim( field.mask_field()), #unityの仕様上1次元化する
             "players":player_states
         }
         json["turn"].append(turn_info)

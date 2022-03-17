@@ -27,6 +27,12 @@ class Option:
 
         self.user_code = user_code
 
+def reduceDim(list):
+    ret = []
+    for l in list:
+        ret = ret + l
+    return ret
+
 def start(option:Option=Option()):
     # フィールド生成
     field = Field(option)
@@ -46,7 +52,7 @@ def start(option:Option=Option()):
     # json用の辞書を生成
     json_ = {
         "players":[{"name":"デモ太郎","icon":"https://sample.com"} for i in range(option.num_players)],
-	    "stage":{"width":option.width,"height":option.height,"field":field.mask_field(),"players":[{"x":player.pos_x,"y":player.pos_y}for player in players]},
+	    "stage":{"width":option.width,"height":option.height,"field":reduceDim(field.mask_field()),"players":[{"x":player.pos_x,"y":player.pos_y}for player in players]},
 	    "turn":[],
 	    "result":{},
     }
@@ -192,11 +198,7 @@ def run(max_turn: int, field: Field, players: list, user_code:list,json: dict):
         ## scoreをplayer_stateに追加
         for i,player in enumerate(players):
             player_states[i]["score"] = player.score
-        def reduceDim(list):
-            ret = []
-            for l in list:
-                ret = ret + l
-            return ret
+        
 
         turn_info = {
             "field":reduceDim( field.mask_field()), #unityの仕様上1次元化する
@@ -207,19 +209,20 @@ def run(max_turn: int, field: Field, players: list, user_code:list,json: dict):
 
 def judge(option,field):
     #fieldsの要素を数える
-    score = {}
+    score = []
     for i in range(option.num_players):
-        score[str(i)] = 0
+        score += [0]
 
     for line in field:
         for value in line:
             if 0 <= value < option.num_players:
-                score[str(value)] +=1
-    idx_list = [(v,k) for k, v in score.items()]
+                score[value] +=1
+    idx_list = [(s,i) for i,s in enumerate(score)]
+
     idx_list.sort(reverse=True)
     print("score",score)
 
-    return {"scores":score,"rank":[int(i) for s,i in idx_list]}
+    return {"scores":score,"rank":[i for s,i in idx_list]}
     
 def save_json(option, dict):
     print(dict)
@@ -228,3 +231,4 @@ def save_json(option, dict):
 
 if __debug__:
     start()
+    

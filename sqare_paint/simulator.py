@@ -4,7 +4,8 @@ from player import Player
 from field import Field
 import random
 import json
-
+import sys
+import io
 class Option:
     def __init__(self, width: int = 5, height: int = 5, num_players: int = 4, initial_pos=[(0, 0), (0, 4), (4, 4), (4, 0)], max_turn=30,
         initial_field = None,json_path=None,user_code = None, players=None,
@@ -77,8 +78,23 @@ def get_states(players, field):
     return [{"my_pos":player.get_pos(),"others_pos": [other.get_pos() for other in others[player.id]],"field":masked_field} for player in players]
 
 def get_next_actions(players, states,user_code):
-    # playersのaction()を実行
-    return [player.action(state,code) for player,state,code in zip(players,states,user_code)]
+    ret_list =[]
+    for player,state,code in zip(players,states,user_code):
+        # 文字列IOストリームを初期化して、f に代入
+        with io.StringIO() as f:
+            # 標準出力を f に切り替える。
+            sys.stdout = f
+
+            #actionを実行
+            action = player.action(state,code)
+
+            # f に出力されたものを文字列として取得
+            text = f.getvalue()
+
+            # 標準出力をデフォルトに戻して text を表示
+            sys.stdout = sys.__stdout__
+            ret_list += [{"action":action,"print":text}]
+    return ret_list
 
 def step(next_actions,field,players):
     # next_actionを実行しfieldとplayerのフィールドを更新
@@ -181,10 +197,14 @@ def run(max_turn: int, field: Field, players: list, user_code:list,json: dict):
         }
         '''
         # 4人分の行動を収集
-        next_actions = get_next_actions(players,states,user_code)
+        # actionに行動，printに標準出力が入った辞書を4人分のリストにして返ってくる
+        action_results = get_next_actions(players,states,user_code)
 
-        for j,action in enumerate(next_actions):
-            player_states[j]["action"] = action
+        for j,result in enumerate(action_results):
+            player_states[j]["action"] = result["action"]
+        
+        next_actions = [result["action"] for result in action_results]
+        prints = [result["print"] for result in action_results]
 
         # 行動を反映
         step(next_actions,field,players)
@@ -200,7 +220,10 @@ def run(max_turn: int, field: Field, players: list, user_code:list,json: dict):
         ## scoreをplayer_stateに追加
         for i,player in enumerate(players):
             player_states[i]["score"] = player.score
-        
+
+        ## printsをplayer_stateに追加
+        for i,text in enumerate(prints):
+            player_states[i]["print"] = text
 
         turn_info = {
             "field":reduceDim( field.mask_field()), #unityの仕様上1次元化する

@@ -63,7 +63,7 @@ def start(option:Option=Option()):
     run(option.max_turn, field, players,option.user_code, json_)
 
     #結果測定
-    print(judge(option,field.mask_field()))
+    #print(judge(option,field.mask_field()))
     json_["result"] = judge(option,field.mask_field())
 
 
@@ -149,7 +149,8 @@ def check_finish():
 
 def debug(msg):
     if __debug__:
-        print(msg)
+        #print(msg)
+        pass
 
 def debug_log(players,field):
     if __debug__:
@@ -173,8 +174,8 @@ def debug_log(players,field):
             print()
 
 def run(max_turn: int, field: Field, players: list, user_code:list,json: dict):
-    debug("初期状態")
-    debug_log(players,field)
+    #debug("初期状態")
+    #debug_log(players,field)
     for i in range(max_turn):
         # 現在のフィールドを保存
         
@@ -214,8 +215,8 @@ def run(max_turn: int, field: Field, players: list, user_code:list,json: dict):
             break
 
         # JSONへ保存
-        debug(str(i+1)+"ターン目の処理後")
-        debug_log(players,field)
+        #debug(str(i+1)+"ターン目の処理後")
+        #debug_log(players,field)
         
         ## scoreをplayer_stateに追加
         for i,player in enumerate(players):
@@ -245,12 +246,10 @@ def judge(option,field):
     idx_list = [(s,i) for i,s in enumerate(score)]
 
     idx_list.sort(reverse=True)
-    print("score",score)
 
     return {"scores":score,"rank":[i for s,i in idx_list]}
     
 def save_json(option, dict):
-    print(dict)
     with open(option.json_path, 'w') as f:
         json.dump(dict, f, indent=4)
 

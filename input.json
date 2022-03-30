@@ -79,7 +79,7 @@
                 1,
                 -1,
                 -1,
-                -1,
+                2,
                 2
             ],
             "players": [
@@ -87,7 +87,7 @@
                     "x": 0,
                     "y": 0,
                     "state": 0,
-                    "action": 2,
+                    "action": 3,
                     "score": 1,
                     "print": ""
                 },
@@ -103,17 +103,17 @@
                     "x": 4,
                     "y": 4,
                     "state": 0,
-                    "action": 1,
-                    "score": 1,
+                    "action": 3,
+                    "score": 2,
                     "print": ""
                 },
                 {
                     "x": 4,
                     "y": 0,
                     "state": 0,
-                    "action": 5,
+                    "action": 1,
                     "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
+                    "print": ""
                 }
             ]
         },
@@ -142,13 +142,13 @@
                 1,
                 -1,
                 -1,
-                -1,
+                2,
                 2
             ],
             "players": [
                 {
-                    "x": 0,
-                    "y": -1,
+                    "x": -1,
+                    "y": 0,
                     "state": 3,
                     "action": 6,
                     "score": 1,
@@ -160,23 +160,23 @@
                     "state": 3,
                     "action": 6,
                     "score": 1,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 4,
+                    "state": 0,
+                    "action": 0,
+                    "score": 2,
                     "print": ""
                 },
                 {
                     "x": 5,
-                    "y": 4,
+                    "y": 0,
                     "state": 3,
                     "action": 6,
                     "score": 1,
                     "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
                 }
             ]
         },
@@ -205,13 +205,13 @@
                 1,
                 -1,
                 -1,
-                -1,
+                2,
                 2
             ],
             "players": [
                 {
-                    "x": 0,
-                    "y": -1,
+                    "x": -1,
+                    "y": 0,
                     "state": 2,
                     "action": 6,
                     "score": 1,
@@ -223,23 +223,23 @@
                     "state": 2,
                     "action": 6,
                     "score": 1,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 5,
+                    "state": 3,
+                    "action": 6,
+                    "score": 2,
                     "print": ""
                 },
                 {
                     "x": 5,
-                    "y": 4,
+                    "y": 0,
                     "state": 2,
                     "action": 6,
                     "score": 1,
                     "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
                 }
             ]
         },
@@ -247,818 +247,62 @@
             "field": [
                 0,
                 -1,
-                -1,
-                -1,
+                0,
+                3,
                 3,
                 -1,
                 -1,
                 -1,
                 -1,
                 -1,
-                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
                 -1,
                 1,
                 -1,
                 -1,
-                -1,
-                -1,
-                -1,
-                -1,
-                -1,
-                1,
                 2,
-                -1,
-                -1,
                 2
             ],
             "players": [
                 {
-                    "x": 0,
-                    "y": 2,
+                    "x": 2,
+                    "y": 0,
                     "state": 1,
                     "action": 6,
                     "score": 2,
                     "print": ""
                 },
                 {
-                    "x": 2,
-                    "y": 2,
-                    "state": 1,
-                    "action": 6,
-                    "score": 2,
-                    "print": ""
-                },
-                {
-                    "x": 1,
+                    "x": 0,
                     "y": 4,
                     "state": 1,
                     "action": 6,
-                    "score": 2,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
                     "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                0,
-                -1,
-                -1,
-                -1,
-                -1,
-                0,
-                1,
-                1,
-                -1,
-                -1,
-                -1,
-                -1,
-                -1,
-                -1,
-                -1,
-                2,
-                2,
-                -1,
-                -1,
-                2
-            ],
-            "players": [
-                {
-                    "x": 0,
-                    "y": 2,
-                    "state": 0,
-                    "action": 2,
-                    "score": 3,
                     "print": ""
                 },
                 {
-                    "x": 2,
-                    "y": 2,
-                    "state": 0,
-                    "action": 3,
-                    "score": 2,
-                    "print": ""
-                },
-                {
-                    "x": 1,
-                    "y": 4,
-                    "state": 0,
-                    "action": 3,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                0,
-                -1,
-                -1,
-                -1,
-                -1,
-                0,
-                1,
-                1,
-                -1,
-                -1,
-                -1,
-                -1,
-                -1,
-                -1,
-                -1,
-                2,
-                2,
-                -1,
-                -1,
-                2
-            ],
-            "players": [
-                {
-                    "x": 0,
-                    "y": 1,
-                    "state": 0,
-                    "action": 3,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 1,
-                    "y": 2,
-                    "state": 0,
-                    "action": 1,
-                    "score": 2,
-                    "print": ""
-                },
-                {
-                    "x": 0,
-                    "y": 4,
-                    "state": 0,
-                    "action": 0,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                0,
-                -1,
-                -1,
-                -1,
-                -1,
-                0,
-                1,
-                1,
-                -1,
-                -1,
-                -1,
-                -1,
-                -1,
-                -1,
-                -1,
-                2,
-                2,
-                -1,
-                -1,
-                2
-            ],
-            "players": [
-                {
-                    "x": -1,
-                    "y": 1,
-                    "state": 3,
-                    "action": 6,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 2,
-                    "y": 2,
-                    "state": 0,
-                    "action": 3,
-                    "score": 2,
-                    "print": ""
-                },
-                {
-                    "x": 0,
-                    "y": 5,
-                    "state": 3,
-                    "action": 6,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                0,
-                -1,
-                -1,
-                -1,
-                -1,
-                0,
-                1,
-                1,
-                -1,
-                -1,
-                -1,
-                1,
-                -1,
-                -1,
-                -1,
-                2,
-                2,
-                -1,
-                -1,
-                2
-            ],
-            "players": [
-                {
-                    "x": -1,
-                    "y": 1,
-                    "state": 2,
-                    "action": 6,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 1,
-                    "y": 2,
-                    "state": 0,
-                    "action": 0,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 0,
+                    "x": 3,
                     "y": 5,
                     "state": 2,
                     "action": 6,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                0,
-                -1,
-                -1,
-                -1,
-                -1,
-                0,
-                1,
-                1,
-                -1,
-                -1,
-                1,
-                1,
-                2,
-                -1,
-                0,
-                2,
-                2,
-                -1,
-                -1,
-                2
-            ],
-            "players": [
-                {
-                    "x": 4,
-                    "y": 3,
-                    "state": 1,
-                    "action": 6,
-                    "score": 4,
-                    "print": ""
-                },
-                {
-                    "x": 1,
-                    "y": 3,
-                    "state": 0,
-                    "action": 3,
-                    "score": 4,
-                    "print": ""
-                },
-                {
-                    "x": 2,
-                    "y": 3,
-                    "state": 1,
-                    "action": 6,
-                    "score": 4,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                0,
-                -1,
-                -1,
-                -1,
-                -1,
-                0,
-                1,
-                1,
-                -1,
-                0,
-                1,
-                2,
-                2,
-                -1,
-                0,
-                2,
-                2,
-                -1,
-                -1,
-                2
-            ],
-            "players": [
-                {
-                    "x": 4,
-                    "y": 3,
-                    "state": 0,
-                    "action": 2,
-                    "score": 5,
-                    "print": ""
-                },
-                {
-                    "x": 0,
-                    "y": 3,
-                    "state": 0,
-                    "action": 1,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 2,
-                    "y": 3,
-                    "state": 0,
-                    "action": 3,
-                    "score": 5,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                0,
-                -1,
-                -1,
-                -1,
-                -1,
-                0,
-                1,
-                1,
-                -1,
-                0,
-                2,
-                2,
-                2,
-                -1,
-                0,
-                2,
-                2,
-                -1,
-                -1,
-                2
-            ],
-            "players": [
-                {
-                    "x": 4,
-                    "y": 2,
-                    "state": 0,
-                    "action": 0,
-                    "score": 5,
-                    "print": ""
-                },
-                {
-                    "x": 1,
-                    "y": 3,
-                    "state": 0,
-                    "action": 3,
                     "score": 2,
                     "print": ""
                 },
                 {
-                    "x": 1,
-                    "y": 3,
-                    "state": 0,
-                    "action": 3,
-                    "score": 6,
-                    "print": ""
-                },
-                {
-                    "x": 4,
+                    "x": 3,
                     "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                0,
-                -1,
-                -1,
-                -1,
-                -1,
-                1,
-                1,
-                1,
-                -1,
-                0,
-                2,
-                2,
-                2,
-                -1,
-                0,
-                2,
-                2,
-                -1,
-                -1,
-                0
-            ],
-            "players": [
-                {
-                    "x": 4,
-                    "y": 3,
-                    "state": 0,
-                    "action": 0,
-                    "score": 5,
-                    "print": ""
-                },
-                {
-                    "x": 0,
-                    "y": 3,
-                    "state": 0,
-                    "action": 2,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 0,
-                    "y": 3,
-                    "state": 0,
-                    "action": 1,
-                    "score": 5,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                1,
-                -1,
-                -1,
-                -1,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                2,
-                2,
-                2,
-                -1,
-                0,
-                2,
-                2,
-                -1,
-                -1,
-                0
-            ],
-            "players": [
-                {
-                    "x": 4,
-                    "y": 4,
-                    "state": 0,
-                    "action": 0,
-                    "score": 4,
-                    "print": ""
-                },
-                {
-                    "x": 0,
-                    "y": 2,
-                    "state": 0,
-                    "action": 2,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 1,
-                    "y": 3,
-                    "state": 0,
-                    "action": 2,
-                    "score": 6,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                1,
-                2,
-                -1,
-                -1,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                2,
-                2,
-                2,
-                -1,
-                0,
-                2,
-                2,
-                -1,
-                -1,
-                0
-            ],
-            "players": [
-                {
-                    "x": 4,
-                    "y": 5,
-                    "state": 3,
-                    "action": 6,
-                    "score": 4,
-                    "print": ""
-                },
-                {
-                    "x": 0,
-                    "y": 1,
-                    "state": 0,
-                    "action": 3,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 1,
-                    "y": 2,
-                    "state": 0,
-                    "action": 2,
-                    "score": 7,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                1,
-                2,
-                2,
-                -1,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                2,
-                2,
-                2,
-                -1,
-                0,
-                2,
-                2,
-                -1,
-                -1,
-                0
-            ],
-            "players": [
-                {
-                    "x": 4,
-                    "y": 5,
-                    "state": 2,
-                    "action": 6,
-                    "score": 4,
-                    "print": ""
-                },
-                {
-                    "x": -1,
-                    "y": 1,
-                    "state": 3,
-                    "action": 6,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 1,
-                    "y": 1,
-                    "state": 0,
-                    "action": 1,
-                    "score": 8,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                -1,
-                -1,
-                3,
-                1,
-                2,
-                2,
-                2,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                0,
-                2,
-                2,
-                -1,
-                0,
-                2,
-                2,
-                -1,
-                -1,
-                0
-            ],
-            "players": [
-                {
-                    "x": 0,
-                    "y": 3,
                     "state": 1,
                     "action": 6,
-                    "score": 5,
+                    "score": 2,
                     "print": ""
-                },
-                {
-                    "x": -1,
-                    "y": 1,
-                    "state": 2,
-                    "action": 6,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 2,
-                    "y": 1,
-                    "state": 0,
-                    "action": 1,
-                    "score": 8,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
                 }
             ]
         },
@@ -1066,41 +310,49 @@
             "field": [
                 0,
                 -1,
-                -1,
-                2,
+                0,
                 3,
+                3,
+                -1,
+                -1,
+                -1,
+                3,
+                -1,
+                -1,
+                -1,
+                -1,
+                2,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
                 1,
-                2,
-                2,
-                2,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                0,
-                0,
-                2,
-                -1,
-                0,
-                2,
-                2,
                 -1,
                 -1,
-                0
+                2,
+                2
             ],
             "players": [
                 {
-                    "x": 0,
-                    "y": 3,
+                    "x": 2,
+                    "y": 0,
                     "state": 0,
-                    "action": 1,
-                    "score": 6,
+                    "action": 2,
+                    "score": 2,
                     "print": ""
                 },
                 {
                     "x": 0,
+                    "y": 4,
+                    "state": 0,
+                    "action": 3,
+                    "score": 1,
+                    "print": ""
+                },
+                {
+                    "x": 3,
                     "y": 2,
                     "state": 1,
                     "action": 6,
@@ -1109,313 +361,124 @@
                 },
                 {
                     "x": 3,
-                    "y": 1,
-                    "state": 0,
-                    "action": 2,
-                    "score": 8,
-                    "print": ""
-                },
-                {
-                    "x": 4,
                     "y": 0,
                     "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                -1,
-                2,
-                2,
-                3,
-                1,
-                2,
-                2,
-                2,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                0,
-                0,
-                0,
-                -1,
-                0,
-                2,
-                2,
-                -1,
-                -1,
-                0
-            ],
-            "players": [
-                {
-                    "x": 1,
-                    "y": 3,
-                    "state": 0,
-                    "action": 1,
-                    "score": 7,
-                    "print": ""
-                },
-                {
-                    "x": 0,
-                    "y": 2,
-                    "state": 0,
-                    "action": 3,
+                    "action": 0,
                     "score": 3,
                     "print": ""
-                },
-                {
-                    "x": 3,
-                    "y": 0,
-                    "state": 0,
-                    "action": 3,
-                    "score": 8,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
                 }
             ]
         },
         {
             "field": [
                 0,
-                2,
-                2,
+                -1,
+                0,
+                3,
+                3,
+                -1,
+                -1,
+                -1,
                 2,
                 3,
+                -1,
+                -1,
+                -1,
+                2,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
                 1,
-                2,
-                2,
-                2,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                2,
-                2,
                 -1,
                 -1,
-                0
+                2,
+                2
             ],
             "players": [
                 {
                     "x": 2,
-                    "y": 3,
-                    "state": 0,
-                    "action": 1,
-                    "score": 8,
-                    "print": ""
-                },
-                {
-                    "x": -1,
-                    "y": 2,
-                    "state": 3,
-                    "action": 6,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 2,
-                    "y": 0,
-                    "state": 0,
-                    "action": 3,
-                    "score": 9,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                2,
-                2,
-                2,
-                3,
-                1,
-                2,
-                2,
-                2,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                2,
-                2,
-                -1,
-                -1,
-                0
-            ],
-            "players": [
-                {
-                    "x": 3,
-                    "y": 3,
-                    "state": 0,
-                    "action": 1,
-                    "score": 8,
-                    "print": ""
-                },
-                {
-                    "x": -1,
-                    "y": 2,
-                    "state": 2,
-                    "action": 6,
-                    "score": 3,
-                    "print": ""
-                },
-                {
-                    "x": 1,
-                    "y": 0,
-                    "state": 0,
-                    "action": 2,
-                    "score": 9,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
-                }
-            ]
-        },
-        {
-            "field": [
-                0,
-                2,
-                2,
-                2,
-                3,
-                1,
-                1,
-                2,
-                2,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                2,
-                2,
-                -1,
-                -1,
-                0
-            ],
-            "players": [
-                {
-                    "x": 4,
-                    "y": 3,
-                    "state": 0,
-                    "action": 3,
-                    "score": 8,
-                    "print": ""
-                },
-                {
-                    "x": 1,
-                    "y": 1,
-                    "state": 1,
-                    "action": 6,
-                    "score": 4,
-                    "print": ""
-                },
-                {
-                    "x": 1,
                     "y": -1,
                     "state": 3,
                     "action": 6,
-                    "score": 8,
+                    "score": 2,
                     "print": ""
                 },
                 {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
+                    "x": -1,
+                    "y": 4,
+                    "state": 3,
+                    "action": 6,
                     "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 2,
+                    "state": 0,
+                    "action": 2,
+                    "score": 4,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 1,
+                    "state": 0,
+                    "action": 1,
+                    "score": 3,
+                    "print": ""
                 }
             ]
         },
         {
             "field": [
                 0,
-                1,
-                2,
+                -1,
+                0,
                 2,
                 3,
-                1,
-                1,
+                -1,
+                -1,
+                -1,
                 2,
+                3,
+                -1,
+                -1,
+                -1,
                 2,
+                3,
+                -1,
+                -1,
+                -1,
+                -1,
                 -1,
                 1,
-                2,
-                1,
                 -1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                2,
-                2,
                 -1,
-                0,
-                0
+                2,
+                2
             ],
             "players": [
                 {
-                    "x": 3,
-                    "y": 3,
-                    "state": 0,
-                    "action": 0,
-                    "score": 9,
+                    "x": 2,
+                    "y": -1,
+                    "state": 2,
+                    "action": 6,
+                    "score": 2,
                     "print": ""
                 },
                 {
-                    "x": 1,
+                    "x": -1,
+                    "y": 4,
+                    "state": 2,
+                    "action": 6,
+                    "score": 1,
+                    "print": ""
+                },
+                {
+                    "x": 3,
                     "y": 1,
                     "state": 0,
                     "action": 2,
@@ -1423,377 +486,1243 @@
                     "print": ""
                 },
                 {
-                    "x": 1,
+                    "x": 4,
+                    "y": 1,
+                    "state": 0,
+                    "action": 0,
+                    "score": 3,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                0,
+                2,
+                3,
+                -1,
+                -1,
+                -1,
+                2,
+                3,
+                -1,
+                -1,
+                -1,
+                2,
+                3,
+                0,
+                -1,
+                -1,
+                1,
+                -1,
+                1,
+                -1,
+                -1,
+                2,
+                2
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 3,
+                    "state": 1,
+                    "action": 6,
+                    "score": 3,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "state": 1,
+                    "action": 6,
+                    "score": 2,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 0,
+                    "state": 0,
+                    "action": 2,
+                    "score": 5,
+                    "print": ""
+                },
+                {
+                    "x": 4,
+                    "y": 2,
+                    "state": 0,
+                    "action": 2,
+                    "score": 3,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                0,
+                2,
+                3,
+                -1,
+                -1,
+                -1,
+                2,
+                3,
+                0,
+                -1,
+                -1,
+                2,
+                3,
+                0,
+                -1,
+                -1,
+                1,
+                -1,
+                1,
+                -1,
+                -1,
+                1,
+                2
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 3,
+                    "state": 0,
+                    "action": 2,
+                    "score": 4,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "state": 0,
+                    "action": 0,
+                    "score": 3,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": -1,
+                    "state": 3,
+                    "action": 6,
+                    "score": 4,
+                    "print": ""
+                },
+                {
+                    "x": 4,
+                    "y": 1,
+                    "state": 0,
+                    "action": 1,
+                    "score": 3,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                0,
+                2,
+                3,
+                -1,
+                -1,
+                -1,
+                2,
+                3,
+                0,
+                -1,
+                -1,
+                2,
+                3,
+                0,
+                -1,
+                -1,
+                1,
+                -1,
+                1,
+                -1,
+                -1,
+                1,
+                2
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 2,
+                    "state": 0,
+                    "action": 3,
+                    "score": 4,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 4,
+                    "state": 0,
+                    "action": 0,
+                    "score": 3,
+                    "print": ""
+                },
+                {
+                    "x": 3,
                     "y": -1,
                     "state": 2,
                     "action": 6,
-                    "score": 7,
+                    "score": 4,
                     "print": ""
                 },
                 {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
+                    "x": 5,
+                    "y": 1,
+                    "state": 3,
+                    "action": 6,
+                    "score": 3,
+                    "print": ""
                 }
             ]
         },
         {
             "field": [
                 0,
-                1,
-                1,
+                -1,
+                0,
                 2,
                 3,
-                1,
-                1,
+                -1,
+                -1,
+                -1,
                 2,
+                3,
+                0,
+                -1,
+                -1,
                 2,
+                3,
+                0,
+                -1,
                 -1,
                 1,
-                2,
+                -1,
                 1,
                 -1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                2,
-                2,
                 -1,
-                0,
+                1,
                 2
             ],
             "players": [
                 {
+                    "x": -1,
+                    "y": 2,
+                    "state": 3,
+                    "action": 6,
+                    "score": 4,
+                    "print": ""
+                },
+                {
                     "x": 3,
-                    "y": 4,
-                    "state": 0,
-                    "action": 1,
-                    "score": 8,
+                    "y": 5,
+                    "state": 3,
+                    "action": 6,
+                    "score": 3,
                     "print": ""
                 },
                 {
-                    "x": 1,
-                    "y": 0,
-                    "state": 0,
-                    "action": 1,
-                    "score": 6,
+                    "x": 3,
+                    "y": 1,
+                    "state": 1,
+                    "action": 6,
+                    "score": 4,
                     "print": ""
                 },
                 {
-                    "x": 4,
+                    "x": 5,
+                    "y": 1,
+                    "state": 2,
+                    "action": 6,
+                    "score": 3,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                0,
+                2,
+                3,
+                -1,
+                -1,
+                -1,
+                2,
+                3,
+                0,
+                -1,
+                -1,
+                2,
+                3,
+                0,
+                -1,
+                -1,
+                1,
+                -1,
+                3,
+                -1,
+                -1,
+                1,
+                2
+            ],
+            "players": [
+                {
+                    "x": -1,
+                    "y": 2,
+                    "state": 2,
+                    "action": 6,
+                    "score": 4,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 5,
+                    "state": 2,
+                    "action": 6,
+                    "score": 2,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 1,
+                    "state": 0,
+                    "action": 0,
+                    "score": 4,
+                    "print": ""
+                },
+                {
+                    "x": 0,
                     "y": 4,
                     "state": 1,
                     "action": 6,
-                    "score": 7,
+                    "score": 4,
                     "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
                 }
             ]
         },
         {
             "field": [
                 0,
-                1,
-                1,
+                -1,
+                0,
                 2,
                 3,
-                1,
-                1,
-                1,
+                -1,
+                -1,
+                -1,
                 2,
+                3,
+                0,
+                -1,
+                -1,
+                2,
+                2,
+                3,
                 -1,
                 1,
-                2,
                 1,
                 -1,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                2,
-                2,
                 -1,
-                0,
+                -1,
+                1,
                 2
             ],
             "players": [
                 {
-                    "x": 4,
+                    "x": 0,
                     "y": 4,
-                    "state": 0,
-                    "action": 1,
-                    "score": 8,
+                    "state": 1,
+                    "action": 6,
+                    "score": 4,
                     "print": ""
                 },
                 {
                     "x": 2,
-                    "y": 0,
+                    "y": 3,
+                    "state": 1,
+                    "action": 6,
+                    "score": 3,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 2,
+                    "state": 0,
+                    "action": 1,
+                    "score": 5,
+                    "print": ""
+                },
+                {
+                    "x": 0,
+                    "y": 4,
+                    "state": 0,
+                    "action": 2,
+                    "score": 3,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                0,
+                2,
+                3,
+                -1,
+                -1,
+                -1,
+                2,
+                3,
+                0,
+                -1,
+                -1,
+                2,
+                2,
+                3,
+                -1,
+                1,
+                1,
+                -1,
+                0,
+                -1,
+                -1,
+                1,
+                2
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 4,
                     "state": 0,
                     "action": 0,
-                    "score": 7,
+                    "score": 4,
+                    "print": ""
+                },
+                {
+                    "x": 2,
+                    "y": 3,
+                    "state": 0,
+                    "action": 1,
+                    "score": 3,
                     "print": ""
                 },
                 {
                     "x": 4,
-                    "y": 4,
+                    "y": 2,
+                    "state": 0,
+                    "action": 3,
+                    "score": 5,
+                    "print": ""
+                },
+                {
+                    "x": 0,
+                    "y": 3,
+                    "state": 0,
+                    "action": 3,
+                    "score": 3,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                0,
+                2,
+                3,
+                -1,
+                -1,
+                -1,
+                2,
+                3,
+                0,
+                -1,
+                -1,
+                2,
+                2,
+                3,
+                -1,
+                1,
+                2,
+                -1,
+                0,
+                -1,
+                -1,
+                1,
+                2
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 5,
+                    "state": 3,
+                    "action": 6,
+                    "score": 4,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "state": 0,
+                    "action": 3,
+                    "score": 2,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 2,
                     "state": 0,
                     "action": 0,
                     "score": 6,
                     "print": ""
                 },
                 {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
+                    "x": -1,
+                    "y": 3,
+                    "state": 3,
+                    "action": 6,
+                    "score": 3,
+                    "print": ""
                 }
             ]
         },
         {
             "field": [
                 0,
-                1,
-                1,
+                -1,
+                0,
                 2,
                 3,
-                1,
-                1,
-                1,
-                2,
                 -1,
-                1,
-                2,
-                1,
                 -1,
+                -1,
+                2,
+                3,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
+                -1,
+                -1,
+                2,
+                2,
+                3,
+                -1,
                 2,
                 2,
                 -1,
                 0,
+                -1,
+                1,
+                1,
                 2
             ],
             "players": [
                 {
-                    "x": 5,
-                    "y": 4,
-                    "state": 3,
+                    "x": 0,
+                    "y": 5,
+                    "state": 2,
                     "action": 6,
-                    "score": 8,
+                    "score": 4,
                     "print": ""
                 },
                 {
                     "x": 2,
-                    "y": 1,
+                    "y": 3,
+                    "state": 0,
+                    "action": 0,
+                    "score": 2,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 3,
                     "state": 0,
                     "action": 3,
                     "score": 7,
                     "print": ""
                 },
                 {
-                    "x": 4,
-                    "y": 5,
-                    "state": 3,
+                    "x": -1,
+                    "y": 3,
+                    "state": 2,
                     "action": 6,
-                    "score": 6,
+                    "score": 3,
                     "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
                 }
             ]
         },
         {
             "field": [
+                3,
                 0,
-                1,
-                1,
+                0,
                 2,
                 3,
-                1,
-                1,
-                1,
-                2,
                 -1,
-                1,
-                2,
-                1,
                 -1,
+                -1,
+                2,
+                3,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
+                -1,
+                -1,
+                2,
+                2,
+                3,
+                -1,
                 2,
                 2,
                 -1,
                 0,
+                -1,
+                1,
+                1,
                 2
             ],
             "players": [
                 {
-                    "x": 5,
-                    "y": 4,
-                    "state": 2,
+                    "x": 1,
+                    "y": 0,
+                    "state": 1,
                     "action": 6,
-                    "score": 8,
+                    "score": 4,
                     "print": ""
                 },
+                {
+                    "x": 2,
+                    "y": 4,
+                    "state": 0,
+                    "action": 1,
+                    "score": 2,
+                    "print": ""
+                },
+                {
+                    "x": 2,
+                    "y": 3,
+                    "state": 0,
+                    "action": 1,
+                    "score": 7,
+                    "print": ""
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 1,
+                    "action": 6,
+                    "score": 4,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                3,
+                0,
+                0,
+                2,
+                3,
+                -1,
+                0,
+                -1,
+                2,
+                3,
+                0,
+                -1,
+                -1,
+                2,
+                2,
+                3,
+                -1,
+                2,
+                2,
+                -1,
+                0,
+                -1,
+                1,
+                1,
+                2
+            ],
+            "players": [
+                {
+                    "x": 1,
+                    "y": 0,
+                    "state": 0,
+                    "action": 0,
+                    "score": 5,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 4,
+                    "state": 0,
+                    "action": 0,
+                    "score": 2,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "state": 0,
+                    "action": 2,
+                    "score": 7,
+                    "print": ""
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 3,
+                    "score": 4,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                3,
+                0,
+                0,
+                2,
+                3,
+                -1,
+                0,
+                -1,
+                2,
+                3,
+                0,
+                0,
+                -1,
+                2,
+                2,
+                3,
+                -1,
+                2,
+                2,
+                -1,
+                0,
+                -1,
+                1,
+                1,
+                2
+            ],
+            "players": [
                 {
                     "x": 1,
                     "y": 1,
                     "state": 0,
-                    "action": 3,
-                    "score": 7,
-                    "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 5,
-                    "state": 2,
-                    "action": 6,
+                    "action": 0,
                     "score": 6,
                     "print": ""
                 },
                 {
-                    "x": 4,
-                    "y": 0,
+                    "x": 3,
+                    "y": 5,
+                    "state": 3,
+                    "action": 6,
+                    "score": 2,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 2,
                     "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
+                    "action": 2,
+                    "score": 7,
+                    "print": ""
+                },
+                {
+                    "x": -1,
+                    "y": 0,
+                    "state": 3,
+                    "action": 6,
+                    "score": 4,
+                    "print": ""
                 }
             ]
         },
         {
             "field": [
+                3,
                 0,
-                1,
-                1,
+                0,
                 2,
                 3,
-                1,
-                1,
-                1,
-                2,
-                -1,
-                1,
-                2,
-                1,
                 -1,
                 0,
+                -1,
+                2,
+                2,
                 0,
                 0,
-                0,
-                0,
-                0,
+                -1,
+                2,
+                2,
+                3,
+                -1,
                 2,
                 2,
                 -1,
                 0,
+                -1,
+                1,
+                1,
                 2
             ],
             "players": [
                 {
+                    "x": 1,
+                    "y": 2,
+                    "state": 0,
+                    "action": 2,
+                    "score": 6,
+                    "print": ""
+                },
+                {
                     "x": 3,
-                    "y": 4,
-                    "state": 1,
+                    "y": 5,
+                    "state": 2,
                     "action": 6,
+                    "score": 2,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 1,
+                    "state": 0,
+                    "action": 1,
                     "score": 8,
                     "print": ""
                 },
                 {
-                    "x": 0,
+                    "x": -1,
+                    "y": 0,
+                    "state": 2,
+                    "action": 6,
+                    "score": 3,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                3,
+                0,
+                0,
+                2,
+                3,
+                -1,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                -1,
+                2,
+                2,
+                3,
+                -1,
+                2,
+                2,
+                -1,
+                0,
+                -1,
+                3,
+                1,
+                2
+            ],
+            "players": [
+                {
+                    "x": 1,
                     "y": 1,
                     "state": 0,
-                    "action": 0,
+                    "action": 1,
                     "score": 7,
                     "print": ""
                 },
                 {
-                    "x": 0,
+                    "x": 3,
                     "y": 4,
                     "state": 1,
                     "action": 6,
+                    "score": 1,
+                    "print": ""
+                },
+                {
+                    "x": 4,
+                    "y": 1,
+                    "state": 0,
+                    "action": 3,
+                    "score": 8,
+                    "print": ""
+                },
+                {
+                    "x": 2,
+                    "y": 4,
+                    "state": 1,
+                    "action": 6,
+                    "score": 4,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                3,
+                0,
+                0,
+                2,
+                3,
+                -1,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                -1,
+                2,
+                2,
+                3,
+                -1,
+                2,
+                2,
+                -1,
+                0,
+                3,
+                3,
+                1,
+                1
+            ],
+            "players": [
+                {
+                    "x": 2,
+                    "y": 1,
+                    "state": 0,
+                    "action": 1,
+                    "score": 8,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 4,
+                    "state": 0,
+                    "action": 1,
+                    "score": 2,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 1,
+                    "state": 0,
+                    "action": 1,
                     "score": 6,
+                    "print": ""
+                },
+                {
+                    "x": 2,
+                    "y": 4,
+                    "state": 0,
+                    "action": 3,
+                    "score": 5,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                3,
+                0,
+                0,
+                2,
+                2,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                2,
+                2,
+                3,
+                -1,
+                2,
+                2,
+                1,
+                3,
+                3,
+                3,
+                1,
+                1
+            ],
+            "players": [
+                {
+                    "x": 3,
+                    "y": 1,
+                    "state": 0,
+                    "action": 1,
+                    "score": 8,
+                    "print": ""
+                },
+                {
+                    "x": 4,
+                    "y": 4,
+                    "state": 0,
+                    "action": 2,
+                    "score": 3,
+                    "print": ""
+                },
+                {
+                    "x": 4,
+                    "y": 1,
+                    "state": 0,
+                    "action": 2,
+                    "score": 6,
+                    "print": ""
+                },
+                {
+                    "x": 1,
+                    "y": 4,
+                    "state": 0,
+                    "action": 3,
+                    "score": 5,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                3,
+                0,
+                0,
+                2,
+                2,
+                -1,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                -1,
+                2,
+                0,
+                3,
+                -1,
+                2,
+                1,
+                1,
+                3,
+                3,
+                3,
+                1,
+                1
+            ],
+            "players": [
+                {
+                    "x": 4,
+                    "y": 1,
+                    "state": 0,
+                    "action": 0,
+                    "score": 8,
+                    "print": ""
+                },
+                {
+                    "x": 4,
+                    "y": 3,
+                    "state": 0,
+                    "action": 3,
+                    "score": 4,
                     "print": ""
                 },
                 {
                     "x": 4,
                     "y": 0,
                     "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
+                    "action": 0,
+                    "score": 5,
+                    "print": ""
+                },
+                {
+                    "x": 0,
+                    "y": 4,
+                    "state": 0,
+                    "action": 3,
+                    "score": 5,
+                    "print": ""
                 }
             ]
         },
         {
             "field": [
+                3,
                 0,
-                1,
-                1,
+                0,
                 2,
+                2,
+                -1,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                3,
+                -1,
+                1,
+                1,
+                1,
+                3,
+                3,
+                3,
+                1,
+                1
+            ],
+            "players": [
+                {
+                    "x": 4,
+                    "y": 2,
+                    "state": 0,
+                    "action": 3,
+                    "score": 8,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "state": 0,
+                    "action": 3,
+                    "score": 5,
+                    "print": ""
+                },
+                {
+                    "x": 4,
+                    "y": 1,
+                    "state": 0,
+                    "action": 3,
+                    "score": 4,
+                    "print": ""
+                },
+                {
+                    "x": -1,
+                    "y": 4,
+                    "state": 3,
+                    "action": 6,
+                    "score": 5,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                3,
+                0,
+                0,
+                2,
+                2,
+                -1,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                0,
+                2,
+                0,
+                3,
+                -1,
+                1,
+                1,
+                1,
+                3,
                 3,
                 1,
                 1,
-                1,
-                2,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                2,
-                2,
-                -1,
-                0,
-                2
+                1
             ],
             "players": [
                 {
                     "x": 3,
-                    "y": 4,
+                    "y": 2,
                     "state": 0,
-                    "action": 0,
-                    "score": 7,
+                    "action": 3,
+                    "score": 8,
                     "print": ""
                 },
                 {
-                    "x": 0,
+                    "x": 2,
+                    "y": 3,
+                    "state": 0,
+                    "action": 0,
+                    "score": 6,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 1,
+                    "state": 0,
+                    "action": 0,
+                    "score": 5,
+                    "print": ""
+                },
+                {
+                    "x": -1,
+                    "y": 4,
+                    "state": 2,
+                    "action": 6,
+                    "score": 4,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                3,
+                0,
+                0,
+                2,
+                2,
+                -1,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                0,
+                2,
+                2,
+                3,
+                -1,
+                0,
+                1,
+                1,
+                3,
+                3,
+                1,
+                1,
+                1
+            ],
+            "players": [
+                {
+                    "x": 2,
                     "y": 2,
                     "state": 0,
                     "action": 0,
@@ -1801,162 +1730,233 @@
                     "print": ""
                 },
                 {
-                    "x": 0,
+                    "x": 2,
                     "y": 4,
+                    "state": 0,
+                    "action": 1,
+                    "score": 5,
+                    "print": ""
+                },
+                {
+                    "x": 3,
+                    "y": 2,
                     "state": 0,
                     "action": 1,
                     "score": 6,
                     "print": ""
                 },
                 {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
+                    "x": 0,
+                    "y": 4,
+                    "state": 1,
+                    "action": 6,
+                    "score": 4,
+                    "print": ""
                 }
             ]
         },
         {
             "field": [
+                3,
+                0,
+                0,
+                2,
+                2,
+                -1,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                0,
+                2,
+                2,
+                3,
+                -1,
                 0,
                 1,
                 1,
-                2,
+                3,
                 3,
                 1,
                 1,
-                1,
-                2,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                1,
-                2,
-                0,
-                0,
-                0,
-                1,
-                2,
-                -1,
-                0,
-                2
+                1
             ],
             "players": [
                 {
+                    "x": 2,
+                    "y": 3,
+                    "state": 0,
+                    "action": 2,
+                    "score": 8,
+                    "print": ""
+                },
+                {
                     "x": 3,
-                    "y": 5,
+                    "y": 4,
+                    "state": 0,
+                    "action": 1,
+                    "score": 5,
+                    "print": ""
+                },
+                {
+                    "x": 4,
+                    "y": 2,
+                    "state": 0,
+                    "action": 1,
+                    "score": 6,
+                    "print": ""
+                },
+                {
+                    "x": 0,
+                    "y": 4,
+                    "state": 0,
+                    "action": 1,
+                    "score": 4,
+                    "print": ""
+                }
+            ]
+        },
+        {
+            "field": [
+                3,
+                0,
+                0,
+                2,
+                2,
+                -1,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                0,
+                2,
+                2,
+                3,
+                3,
+                0,
+                1,
+                1,
+                3,
+                3,
+                1,
+                1,
+                1
+            ],
+            "players": [
+                {
+                    "x": 2,
+                    "y": 2,
+                    "state": 0,
+                    "action": 3,
+                    "score": 8,
+                    "print": ""
+                },
+                {
+                    "x": 4,
+                    "y": 4,
+                    "state": 0,
+                    "action": 0,
+                    "score": 5,
+                    "print": ""
+                },
+                {
+                    "x": 5,
+                    "y": 2,
                     "state": 3,
                     "action": 6,
                     "score": 6,
                     "print": ""
                 },
                 {
-                    "x": 0,
-                    "y": 3,
-                    "state": 0,
-                    "action": 0,
-                    "score": 9,
-                    "print": ""
-                },
-                {
                     "x": 1,
                     "y": 4,
                     "state": 0,
                     "action": 2,
-                    "score": 6,
+                    "score": 5,
                     "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
                 }
             ]
         },
         {
             "field": [
+                3,
+                0,
+                0,
+                2,
+                2,
+                -1,
+                0,
+                0,
+                2,
+                2,
+                0,
+                3,
+                0,
+                2,
+                2,
+                3,
+                3,
                 0,
                 1,
                 1,
-                2,
+                3,
                 3,
                 1,
                 1,
-                1,
-                2,
-                -1,
-                1,
-                2,
-                1,
-                -1,
-                0,
-                1,
-                2,
-                2,
-                0,
-                0,
-                1,
-                2,
-                -1,
-                0,
-                2
+                1
             ],
             "players": [
                 {
-                    "x": 3,
+                    "x": 1,
+                    "y": 2,
+                    "state": 0,
+                    "action": 2,
+                    "score": 7,
+                    "print": ""
+                },
+                {
+                    "x": 4,
                     "y": 5,
-                    "state": 2,
+                    "state": 3,
                     "action": 6,
                     "score": 5,
                     "print": ""
                 },
                 {
-                    "x": 0,
-                    "y": 4,
-                    "state": 0,
-                    "action": 2,
-                    "score": 9,
+                    "x": 5,
+                    "y": 2,
+                    "state": 2,
+                    "action": 6,
+                    "score": 6,
                     "print": ""
                 },
                 {
                     "x": 1,
                     "y": 3,
                     "state": 0,
-                    "action": 1,
-                    "score": 7,
+                    "action": 2,
+                    "score": 6,
                     "print": ""
-                },
-                {
-                    "x": 4,
-                    "y": 0,
-                    "state": 0,
-                    "action": 5,
-                    "score": 1,
-                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/sqare_paint/./player.py\", line 17, in action\n    return user_code(state[\"field\"],state[\"my_pos\"],state[\"others_pos\"])\n  File \"<string>\", line 3, in error_code\nIndexError: list index out of range\n\n"
                 }
             ]
         }
     ],
     "result": {
         "scores": [
-            5,
-            9,
             7,
-            1
+            5,
+            6,
+            6
         ],
         "rank": [
-            1,
-            2,
             0,
-            3
+            3,
+            2,
+            1
         ]
     }
 }

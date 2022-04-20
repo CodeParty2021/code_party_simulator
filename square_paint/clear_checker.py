@@ -41,4 +41,4 @@ class ClearChecker:
         return True
 
     def judge_drop(self, field, pos):
-        return field[pos[1]][pos[0]] != -1
+        return field[pos[1]-1][pos[0]-1] != -2

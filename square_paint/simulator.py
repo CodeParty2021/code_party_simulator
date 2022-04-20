@@ -7,7 +7,32 @@ import sys
 import io
 
 
+def ret_ERROR(state):
+    return 5
 class Option:
+    def fromJSONDict(json_dict,user_code,players):
+        default = {
+            "width":5,
+            "height":5,
+            "num_players":4,
+            "initial_pos":[(0, 0), (0, 4), (4, 4), (4, 0)],
+            "max_turn":30,
+            "initial_field":None,
+        }
+
+        for param in default.keys():
+            if(not param in json_dict.keys()):
+                json_dict[param] = default[param]
+
+        return Option(
+            width=json_dict["width"],
+            height = json_dict["height"],
+            num_players = json_dict["num_players"],
+            initial_pos=json_dict["initial_pos"],
+            max_turn=json_dict["max_turn"],
+            initial_field=json_dict["initial_field"],
+            user_code=user_code,
+            players=players)
     def __init__(
         self,
         width: int = 5,
@@ -20,6 +45,8 @@ class Option:
         user_code=None,
         players=None,
     ):
+            
+        self.user_code = user_code
         self.width = width
         self.height = height
         self.num_players = num_players
@@ -30,10 +57,6 @@ class Option:
         self.players = players
         if len(initial_pos) != num_players:
             raise Exception("initial_posとnum_playersの数が合ってません")
-
-        def ret_ERROR(state):
-            return 5
-
         if user_code == None:
             user_code = [ret_ERROR for i in range(num_players)]
         if players == None:

@@ -7,9 +7,9 @@ UP, RIGHT, DOWN, LEFT, STAY = 0, 1, 2, 3, 4
 def user_code(field, my_pos, others_pos):
     return random.randrange(0, 4)
 
+json = {
 
-op = square_paint.Option(
-    num_players=4, user_code=[user_code for i in range(4)], json_path="input.json"
-)
+    
+}
+print(square_paint.start(square_paint.Option.fromJSONDict(json,[user_code]*4,[{"name":"name","icon":""}]*4)))
 
-dict_json = square_paint.start(op)

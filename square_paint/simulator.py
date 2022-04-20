@@ -1,6 +1,10 @@
 import enum
+from tabnanny import check
+
 from player import Player
 from field import Field
+from clear_checker import ClearChecker 
+
 import random
 import json
 import sys
@@ -9,6 +13,7 @@ import io
 
 def ret_ERROR(state):
     return 5
+
 class Option:
     def fromJSONDict(json_dict,user_code,players):
         default = {
@@ -18,6 +23,7 @@ class Option:
             "initial_pos":[(0, 0), (0, 4), (4, 4), (4, 0)],
             "max_turn":30,
             "initial_field":None,
+            "clear_rule":None
         }
 
         for param in default.keys():
@@ -32,7 +38,8 @@ class Option:
             max_turn=json_dict["max_turn"],
             initial_field=json_dict["initial_field"],
             user_code=user_code,
-            players=players)
+            players=players,
+            clear_rule=json_dict["clear_rule"])
     def __init__(
         self,
         width: int = 5,
@@ -44,6 +51,7 @@ class Option:
         json_path=None,
         user_code=None,
         players=None,
+        clear_rule=None,
     ):
             
         self.user_code = user_code
@@ -55,6 +63,8 @@ class Option:
         self.initial_field = initial_field  # NoneのときFieldのコンストラクタで初期化
         self.json_path = json_path
         self.players = players
+        self.clear_rule = clear_rule
+
         if len(initial_pos) != num_players:
             raise Exception("initial_posとnum_playersの数が合ってません")
         if user_code == None:
@@ -65,7 +75,6 @@ class Option:
                 for i in range(num_players)
             ]
         self.user_code = user_code
-
 
 def reduceDim(list):
     ret = []
@@ -90,6 +99,9 @@ def start(option: Option = Option()):
     for player, score in zip(players, scores):
         player.set_score(score)
 
+    # クリア条件を判定するインスタンスを生成
+    clear_checker = ClearChecker(option.clear_rule)
+
     # json用の辞書を生成
     json_ = {
         "players": option.players,
@@ -106,12 +118,12 @@ def start(option: Option = Option()):
         "result": {},
     }
     # シミュレーション実行
-    run(option.max_turn, field, players, option.user_code, json_)
+    run(option.max_turn, field, players, option.user_code, json_,clear_checker)
 
     # 結果測定
     # print(judge(option,field.mask_field()))
     json_["result"] = judge(option, field.mask_field())
-
+    json_["result"]["clear"] = clear_checker.result()
     # JSON出力
     if option.json_path is not None:
         save_json(option, json_)
@@ -240,7 +252,7 @@ def debug_log(players, field):
             print()
 
 
-def run(max_turn: int, field: Field, players: list, user_code: list, json: dict):
+def run(max_turn: int, field: Field, players: list, user_code: list, json: dict,clear_checker:ClearChecker):
     # debug("初期状態")
     # debug_log(players,field)
     for i in range(max_turn):
@@ -277,6 +289,8 @@ def run(max_turn: int, field: Field, players: list, user_code: list, json: dict)
 
         # 行動を反映
         step(next_actions, field, players)
+
+        clear_checker.check(field.field,(players[0].pos_x,players[0].pos_y))
 
         # 終了時の処理
         if check_finish():

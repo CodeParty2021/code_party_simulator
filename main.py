@@ -8,11 +8,13 @@ def user_code(field, my_pos, others_pos):
     return random.randrange(0, 4)
 
 
-json = {"clear_rule": {"type": "fill", "payload": {"N": 20}}}
+json = {"num_players":1,"initial_pos":[(0,0)],"clear_rule": {"type": "fill", "payload": {"N": 1}},}
+option= square_paint.Option.fromJSONDict(
+            json, [user_code] * 1, [{"name": "ぼっち太郎", "icon": ""}] * 1
+        )
+option.json_path = "./input.json"
 print(
     square_paint.start(
-        square_paint.Option.fromJSONDict(
-            json, [user_code] * 4, [{"name": "name", "icon": ""}] * 4
-        )
+        option
     )
 )

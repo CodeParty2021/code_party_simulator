@@ -5,8 +5,7 @@ UP, RIGHT, DOWN, LEFT, STAY = 0, 1, 2, 3, 4
 
 
 def user_code(turn_num,field, my_pos, others_pos):
-    return turn_num % 2
-
+    return
 
 json = {"num_players":1,"initial_pos":[(0,0)],"clear_rule": {"type": "fill", "payload": {"N": 1}},}
 option= square_paint.Option.fromJSONDict(

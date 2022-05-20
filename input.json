@@ -1,0 +1,1227 @@
+{
+    "players": [
+        {
+            "name": "\u307c\u3063\u3061\u592a\u90ce",
+            "icon": ""
+        }
+    ],
+    "stage": {
+        "width": 5,
+        "height": 5,
+        "field": [
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "players": [
+            {
+                "x": 0,
+                "y": 0,
+                "score": 1
+            }
+        ]
+    },
+    "turn": [
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        },
+        {
+            "field": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "players": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "state": 0,
+                    "action": 5,
+                    "score": 1,
+                    "print": "Traceback (most recent call last):\n  File \"/Users/fukumotodaisuke/Documents/\u30d5\u309a\u30ed\u30af\u3099\u30e9\u30df\u30f3\u30af\u3099/code_party_simulator/square_paint/./player.py\", line 23, in action\n    raise Exception(\"[0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\")\nException: [0,1,2,3,4] \u306e\u3069\u308c\u304b\u3092\u8fd4\u3057\u3066\u304f\u3060\u3055\u3044\n\n"
+                }
+            ]
+        }
+    ],
+    "result": {
+        "scores": [
+            1
+        ],
+        "rank": [
+            0
+        ],
+        "clear": true
+    }
+}
